@@ -1,0 +1,147 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+/* src/components/TaskColumn/TaskColumn.css */
+.task-column {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* src/components/TaskCard/TaskCard.css */
+.task-card {
+  margin-bottom: 1rem;
+}
+
+.task-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+/* Add this in TaskBoard.css or App.css */
+@media (max-width: 768px) {
+  .task-board {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+  
+  .task-column {
+    margin: 0 0 20px 0; /* Adjust margin to stack columns properly */
+  }
+}
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+/* Display button styles */
+.display-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.display-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Controls container (hidden until toggled) */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.group-by, .sort-by {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 0.5rem;
+}
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button styling */
+.dropdown-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dropdown content (hidden until toggled) */
+.dropdown-content {
+  position: absolute;
+  top: 100%; /* Align just below the dropdown button */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.group-by, .sort-by {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 0.5rem;
+}
+
+select {
+  padding: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
